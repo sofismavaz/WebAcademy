@@ -1,0 +1,17 @@
+/* Crie um arquivo HTML e CSS seguindo as orientações apresentadas na aula sobre seletores, conforme mostrado no slide.
+Obs.: Por favor, coloque o link do código do seu Git para que eu possa avaliá-lo. 
+Lucir Vaz - Prof.Rodrigo - turma 8
+*/
+
+h1, a {
+    color: blue;
+    text-align: center;
+}   
+
+/* seletores agrupados */
+
+p a {
+    color: green;
+    font-size: 20px;
+    text-align: justify;
+}   
