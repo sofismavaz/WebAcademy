@@ -6,6 +6,7 @@ Lucir Vaz - Prof.Rodrigo - turma 8
 h1, a {
     color: blue;
     text-align: center;
+    /* text-transform: uppercase; */
 }   
 
 /* seletores agrupados */
@@ -14,4 +15,21 @@ p a {
     color: green;
     font-size: 20px;
     text-align: justify;
+}   
+
+#logo {
+    color: gold;
+}
+
+/* Atributo HTML que adiciona um identificador reutilizável na tag. Esse identificar pode ser utilizado no
+CSS para selecionarmos o(s) elemento(s): .classe */
+
+.class {
+    color: blue;
+}
+.design {
+    color: red;
+}
+.uderline {
+    text-decoration: underline;
 }   
