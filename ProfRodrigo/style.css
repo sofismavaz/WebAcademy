@@ -33,3 +33,22 @@ CSS para selecionarmos o(s) elemento(s): .classe */
 .uderline {
     text-decoration: underline;
 }   
+
+/* background ou background-color:  Muda a cor de fundo do elemento.*/
+#h1-coresBackground {
+    background-color: black;
+}
+#a-coresBackground {
+    background-color:seagreen;
+    color: white;
+}
+
+/* hexadecimal:  A cor é representada através de um código de 6 caracteres que vão de 0 até F. Exemplo: #000000 (preto) e #FFFFFF (branco). */
+#h1-coresHexadecimal {
+    background-color: #8844cc;
+    color: #000000;
+}
+#a-coresHexadecimal {
+    background-color: #84eeeb;
+    color: ffffff;
+}
