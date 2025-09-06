@@ -67,3 +67,17 @@ O rgb vai de 0 até 255 e o alpha vai de 0 até 1. Exemplo: rgba(0, 0, 0, 1) (pr
 .design {
     color: rgba(255, 0, 0, 1);
 }
+
+/* Para definir um tamanho ou uma distância, devemos utilizar as unidades de medida específicas do
+CSS. 
+Podemos classificar essas unidades em absolutas e relativas: 
+– Absolutas: cm (centímetro), mm (milimetro), px (pixel); 
+– Relativas: a mais utilizada é em, que representa a medida proporcional do elemento onde é
+aplicada (em relação ao tamanho da fonte do elemento pai).
+*/
+.pai {
+    font-size: 16px;
+}
+.filho {
+    font-size: 1.2em; /* 120% do tamanho do elemento pai */
+}
