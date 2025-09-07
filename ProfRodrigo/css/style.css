@@ -1,0 +1,35 @@
+/* Atualize a atividade CINEMA
+6 - Crie um arquivo de estilo dentro de um diretório chamado css.
+6.1 - Link o arquivo em todas as páginas.
+6.2 - Mude a cor dos filmes que estreiam hoje para darkred.
+6.3 - Mude a cor dos filmes que estreiam amanhã para darkblue.
+6.4 - Remova o sublinhado de todos os links do site.
+6.5 - Mude a cor dos links que estão dentro do título de nível 2 para seagreen.
+6.6 - Aumente a fonte dos parágrafos para 20px.
+6.7 - Mude a família da fonte de todo o site para Arial.
+
+Autor: Lucir Vaz - Web Academy - Prof.Rodrigo - turma 8
+*/
+a, p, h1, h2, body {
+    font-family: Arial;    
+}
+
+#amanha {
+    color: darkblue;
+}
+
+#hoje {
+    color: darkred;
+}
+
+.underline {
+    text-decoration: none;
+}
+
+h2 {
+    color: seagreen;
+}
+
+a {
+    font-size: 20px;
+}
