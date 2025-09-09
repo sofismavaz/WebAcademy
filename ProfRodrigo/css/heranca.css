@@ -1,0 +1,12 @@
+body {
+    color: seagreen;
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    line-height: 1.6;
+}
