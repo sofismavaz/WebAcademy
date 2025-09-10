@@ -1,0 +1,30 @@
+
+/* Definir as cores conforme oexemplo:
+Amarelo1 (preço/botão): #febe01 
+Amarelo2 (color botão): #332200 
+Preto: #111 
+Cinza: #b2b2b2 
+Font: Arial 
+Alinhar texto ao centro: text-align: center; 
+Arredondar bordas: border-radius: 4px; 
+*/
+
+div {
+    border: 10px solid #111;
+    background: #b2b2b2;
+}
+
+h2 {
+    background: black;
+    padding: 20px;
+    margin: 30px;
+    border: 4px solid #111;
+}
+
+.caixa {
+    background-color: #111;
+}
+
+span {
+    color: #febefe;
+}
