@@ -1,0 +1,22 @@
+diagramClass
+ClinicaMedica {
+    +String nome
+    +String endereco
+    +String telefone
+    +String cnpj
+    +List<Medico> medicos
+    +List<Paciente> pacientes
+    +List<Consulta> consultas
+    +List<Exame> exames
+    +List<Funcionario> funcionarios
+    +void adicionarMedico(Medico medico)
+    +void removerMedico(Medico medico)
+    +void adicionarPaciente(Paciente paciente)
+    +void removerPaciente(Paciente paciente)
+    +void agendarConsulta(Consulta consulta)
+    +void cancelarConsulta(Consulta consulta)
+    +void adicionarExame(Exame exame)
+    +void removerExame(Exame exame)
+    +void contratarFuncionario(Funcionario funcionario)
+    +void demitirFuncionario(Funcionario funcionario)
+}
