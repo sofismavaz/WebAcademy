@@ -1,3 +1,10 @@
+%% Arquivo: BackEnd/diagramClass_ClinicaMedica.mmd
+%%// Descrição: Diagrama de classes para o sistema de gestão de clínica médica
+%%// Autor: ChatGPT, sob as orientações do Lucir Vaz
+%%// Data: 2024-06-15
+%% WebAcademy - Curso de UML/Backend com Java
+
+
 diagramClass
 ClinicaMedica {
     +String nome
@@ -20,3 +27,73 @@ ClinicaMedica {
     +void contratarFuncionario(Funcionario funcionario)
     +void demitirFuncionario(Funcionario funcionario)
 }
+
+Paciente {
+    +Long id
+    +String nome
+    +String email
+    +String cpf
+    +Date dataNascimento
+    +String grupoSanguineo
+    +String sexo
+    +String telefone
+    +String endereco
+    +String CEP
+    +String cidade
+    +String estado
+}
+Medico {
+    +Long id
+    +String nome
+    +String especialidade
+    +String crm
+    +String telefone
+    +String email
+}
+Atendimento {
+    +Long id
+    +Date data
+    +String hora
+    +String motivo
+    +String diagnostico
+    +String prescricao
+    +String receita
+}
+Consulta {
+    +Long id
+    +Date data
+    +String hora
+    +String status
+    +Paciente paciente
+    +Medico medico
+    +Atendimento atendimento
+}
+Exame {
+    +Long id
+    +String tipo
+    +Date data
+    +String resultado
+    +Paciente paciente
+    +Medico medico
+}
+Funcionario {
+    +Long id
+    +String nome
+    +String cargo
+    +String telefone
+    +String email
+}
+ClinicaMedica "1" o-- "*" Medico : possui
+ClinicaMedica "1" o-- "*" Paciente : possui
+ClinicaMedica "1" o-- "*" Funcionario : possui
+ClinicaMedica "1" o-- "*" Consulta : agenda
+ClinicaMedica "1" o-- "*" Exame : realiza
+Paciente "1" o-- "*" Consulta : agenda
+Paciente "1" o-- "*" Exame : realiza
+Medico "1" o-- "*" Consulta : atende
+Medico "1" o-- "*" Exame : solicita
+Consulta "1" o-- "0..1" Atendimento : gera
+Exame "1" o-- "0..1" Atendimento : gera
+@enduml
+@startuml
+skinparam classAttributeIconSize 0
